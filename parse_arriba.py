@@ -12,5 +12,6 @@ def parse_arriba(row):
         fusion_reader = csv.DictReader(fusions, delimiter='\t')
         for row in fusion_reader:
            fusion_list.append(dict(row))
+        
+        return(fusion_list)
 
-    return fusion_list
